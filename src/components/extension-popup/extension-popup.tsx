@@ -2,10 +2,7 @@ import Header from "../header";
 
 const ExtensionPopup = () => {
   return (
-    <div
-      className="h-full flex flex-col bg-white w-lg"
-      data-testid="extension-popup"
-    >
+    <div className="h-full flex flex-col bg-white w-lg">
       <Header />
     </div>
   );
