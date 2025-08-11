@@ -1,8 +1,10 @@
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import App from "./App.tsx";
+
 import initI18n from "./utils/i18n.ts";
+import App from "./App.tsx";
+
+import "./index.css";
 
 const Root = () => {
   const [ready, setReady] = useState(false);
