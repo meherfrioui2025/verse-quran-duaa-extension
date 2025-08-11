@@ -1,19 +1,18 @@
 import { useExtensionTranslation } from "./hooks/useExtensionTranslation";
+import ExtensionPopup from "./components/extension-popup";
+import { useEffect } from "react";
 
 export default function LanguageSwitcher() {
-  const { t, changeLanguage, currentLanguage } = useExtensionTranslation();
+  const { t, currentLanguage } = useExtensionTranslation();
+
+  useEffect(() => {
+    document.documentElement.dir = currentLanguage === "ar" ? "rtl" : "ltr";
+  }, [currentLanguage]);
 
   return (
     <div>
+      <ExtensionPopup />
       <p>{t("welcome_message")}</p>
-      <select
-        value={currentLanguage}
-        onChange={(e) => changeLanguage(e.target.value)}
-      >
-        <option value="en">English</option>
-        <option value="fr">Français</option>
-        <option value="ar">العربية</option>
-      </select>
     </div>
   );
 }

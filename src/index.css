@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+:root {
+  --islamic-green: hsl(138, 76%, 32%);
+  --islamic-green-light: hsl(122, 45%, 55%);
+}
+
+.gradient-islamic {
+  background: linear-gradient(
+    135deg,
+    var(--islamic-green) 0%,
+    var(--islamic-green-light) 100%
+  );
+}
+
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
