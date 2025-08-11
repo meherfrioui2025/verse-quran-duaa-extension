@@ -1,5 +1,13 @@
 {
     "welcome_message": "Hello, welcome to the QuranVerse Reminder!",
     "islamic_companion": "Islamic Companion",
-    "daily_guidance_prayers": "Daily Guidance & Prayers"
+    "daily_guidance_prayers": "Daily Guidance & Prayers",
+    "tabs": {
+        "duas": "Duas",
+        "verses": "Verses",
+        "prayer": "Prayer",
+        "favorites": "Favorites",
+        "bookmarks": "Saved",
+        "settings": "Settings"
+      }
 }

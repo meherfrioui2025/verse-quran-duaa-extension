@@ -1,5 +1,13 @@
 {
     "welcome_message": "مرحباً، أهلاً بك في تطبيق تذكير آية القرآن!",
     "islamic_companion": "الرفيق الإسلامي",
-    "daily_guidance_prayers": "الهداية اليومية والأدعية"
+    "daily_guidance_prayers": "الهداية اليومية والأدعية",
+    "tabs": {
+        "duas": "الأدعية",
+        "verses": "الآيات",
+        "prayer": "الصلاة",
+        "favorites": "المفضلة",
+        "bookmarks": "المحفوظات",
+        "settings": "الإعدادات"
+    }
 }
