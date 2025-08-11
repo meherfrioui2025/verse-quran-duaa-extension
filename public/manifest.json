@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Quran Verses & Duaa Reminder",
+  "version": "1.0.0",
+  "description": "Get daily Quran verses and inspiring duaa reminders directly in your browser.",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon.png"
+    }
+  }
+ 
+}
