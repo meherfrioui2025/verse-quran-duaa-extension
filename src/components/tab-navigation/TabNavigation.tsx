@@ -47,7 +47,7 @@ const TabNavigation: FC<TabNavigationProps> = ({ activeTab, onTabChange }) => {
             <button
               key={tab.id}
               onClick={() => onTabChange(tab.id)}
-              className={`h-10 flex-1 flex items-center justify-center gap-0.5 text-sm font-medium transition-colors
+              className={`cursor-pointer h-10 flex-1 flex items-center justify-center gap-0.5 text-sm font-medium transition-colors
                 ${
                   isActive
                     ? "border-b-2 border-[var(--islamic-green)] text-white bg-[var(--islamic-green)]"

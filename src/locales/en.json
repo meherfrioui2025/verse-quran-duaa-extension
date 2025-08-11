@@ -9,5 +9,15 @@
         "favorites": "Favorites",
         "bookmarks": "Saved",
         "settings": "Settings"
-      }
+    },
+    "category": {
+        "morning": "Morning",
+        "evening": "Evening",
+        "prayer": "Prayer",
+        "protection": "Protection",
+        "healing": "Healing",
+        "forgiveness": "Forgiveness",
+        "gratitude": "Gratitude",
+        "sleeping": "Sleeping"
+    }
 }

@@ -9,5 +9,15 @@
         "favorites": "Favoris",
         "bookmarks": "Enregistrés",
         "settings": "Paramètres"
+    },
+    "category": {
+        "morning": "Matin",
+        "evening": "Soir",
+        "prayer": "Prière",
+        "protection": "Protection",
+        "healing": "Guérison",
+        "forgiveness": "Pardon",
+        "gratitude": "Gratitude",
+        "sleeping": "Sommeil"
     }
 }

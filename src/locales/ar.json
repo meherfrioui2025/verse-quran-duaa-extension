@@ -9,5 +9,15 @@
         "favorites": "المفضلة",
         "bookmarks": "المحفوظات",
         "settings": "الإعدادات"
+    },
+    "category": {
+        "morning": "الصباح",
+        "evening": "المساء",
+        "prayer": "الصلاة",
+        "protection": "الحماية",
+        "healing": "الشفاء",
+        "forgiveness": "المغفرة",
+        "gratitude": "الامتنان",
+        "sleeping": "النوم"
     }
 }
