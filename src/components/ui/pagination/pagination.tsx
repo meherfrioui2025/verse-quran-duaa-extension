@@ -24,7 +24,7 @@ const Pagination: FC<PaginationProps> = ({
         {t("pagination.prev")}
       </Button>
       <span className="text-sm">
-        Page {currentPage} of {totalPages}
+      {t("pagination.page")} {currentPage} {t("pagination.of")} {totalPages}
       </span>
       <Button
         disabled={currentPage === totalPages}
