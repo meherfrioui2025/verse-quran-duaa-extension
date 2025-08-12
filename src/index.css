@@ -3,6 +3,7 @@
 :root {
   --islamic-green: hsl(138, 76%, 32%);
   --islamic-green-light: hsl(122, 45%, 55%);
+  --islamic-gold: hsl(51, 77%, 56%);
 }
 
 .gradient-islamic {
@@ -16,4 +17,21 @@
 .rtl {
   direction: rtl;
   text-align: right;
+}
+
+.bookmark-btn {
+  transition: all 0.2s ease;
+}
+
+.bookmark-btn:hover {
+  transform: scale(1.1);
+}
+
+.bookmark-btn.active {
+  color: var(--islamic-gold);
+}
+
+
+.shadow-islamic {
+  box-shadow: 0 4px 6px -1px rgba(46, 125, 50, 0.1);
 }

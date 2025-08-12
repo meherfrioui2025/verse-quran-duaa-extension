@@ -1,5 +1,7 @@
 import { FC } from "react";
+
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
+import Select from "../ui/select";
 
 const Header: FC = () => {
   const { t, currentLanguage, changeLanguage } = useExtensionTranslation();
@@ -10,24 +12,23 @@ const Header: FC = () => {
       <div className="relative flex items-center justify-between">
         <div className="flex items-center justify-center">
           <div>
-            <h1 className="text-xl font-bold tracking-wide">
-              {t("appName")}
-            </h1>
+            <h1 className="text-xl font-bold tracking-wide">{t("appName")}</h1>
             <p className="text-sm text-white/80 font-medium">
               {t("daily_guidance_prayers")}
             </p>
           </div>
         </div>
         <div className="flex items-center space-x-2">
-          <select
+          <Select
             value={currentLanguage}
-            onChange={(e) => changeLanguage(e.target.value)}
+            onChange={(value) => changeLanguage(String(value))}
             className="appearance-none border border-gray-300 rounded-md px-3 py-2 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer pr-8"
-          >
-            <option value="en">🇺🇸 English</option>
-            <option value="fr">🇫🇷 Français</option>
-            <option value="ar">🇸🇦 العربية</option>
-          </select>
+            options={[
+              { label: `🇺🇸 ${t("language.en")}`, value: "en" },
+              { label: `🇫🇷 ${t("language.fr")}`, value: "fr" },
+              { label: `🇸🇦 ${t("language.ar")}`, value: "ar" },
+            ]}
+          />
         </div>
       </div>
     </div>

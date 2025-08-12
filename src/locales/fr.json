@@ -2,6 +2,11 @@
     "welcome_message": "Bonjour, bienvenue dans QuranVerse Reminder !",
     "appName": "Compagnon Islamique",
     "daily_guidance_prayers": "Guidance quotidienne et prières",
+    "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "ar": "Arabe"
+  },
     "tabs": {
         "duas": "Douas",
         "verses": "Versets",
@@ -23,5 +28,12 @@
     "footer": {
         "about": "À propos",
         "privacy": "Politique de confidentialité"
+    },
+    "pagination": {
+        "prev": "Précédent",
+        "next": "Suivant",
+        "page": "Page",
+        "of": "sur",
+        "itemsPerPage":"Articles par page"
     }
 }

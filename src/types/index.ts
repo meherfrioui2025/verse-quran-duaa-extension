@@ -17,22 +17,6 @@ export type DuaCategory =
   | "sleeping";
 
 export interface Dua {
-  id: string;
+  text: string;
   title: string;
-  arabic: string;
-  transliteration: string;
-  translation: string;
-  translationFr?: string;
-  category:
-    | "morning"
-    | "evening"
-    | "prayer"
-    | "general"
-    | "protection"
-    | "healing"
-    | "forgiveness"
-    | "gratitude"
-    | "sleeping";
-  recitationCount?: string;
-  audioUrl?: string;
 }

@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { DuaCategory } from "../../../types";
+import Button from "../../ui/button";
 
 export type CategoryOption<> = {
   id: DuaCategory;
@@ -24,9 +25,9 @@ const Category: FC<CategoryTabsProps> = ({
       {categories.map(({ id, label }) => {
         const isActive = selected === id;
         return (
-          <button
+          <Button
             key={id}
-            className={`px-2 py-1 cursor-pointer rounded-full transition-colors whitespace-nowrap ${
+            className={`px-2 py-1 rounded-full transition-colors whitespace-nowrap ${
               isActive
                 ? "bg-[var(--islamic-green)] text-white"
                 : "bg-gray-200 text-gray-600 hover:bg-[var(--islamic-green)] hover:text-white"
@@ -34,7 +35,7 @@ const Category: FC<CategoryTabsProps> = ({
             onClick={() => onChange(id)}
           >
             {label}
-          </button>
+          </Button>
         );
       })}
     </div>
