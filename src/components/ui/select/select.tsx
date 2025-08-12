@@ -23,9 +23,7 @@ const Select: FC<SelectProps> = ({
       value={value}
       onChange={(e) =>
         onChange(
-          typeof value === "number"
-            ? (Number(e.target.value) as any)
-            : (e.target.value as any)
+          typeof value === "number" ? Number(e.target.value) : e.target.value
         )
       }
       className={`border border-gray-300 rounded-lg px-2 py-1 text-sm bg-white cursor-pointer ${className}`}

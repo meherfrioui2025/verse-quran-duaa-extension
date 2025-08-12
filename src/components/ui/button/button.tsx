@@ -1,15 +1,8 @@
 import { FC, ButtonHTMLAttributes, PropsWithChildren } from "react";
 
-interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  icon?: string;
-  size?: string;
-  active?: boolean;
-}
+interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 const Button: FC<PropsWithChildren<IconButtonProps>> = ({
-  icon,
-  size = "text-lg",
-  active = false,
   className = "",
   children,
   ...props
