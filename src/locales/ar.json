@@ -1,6 +1,6 @@
 {
     "welcome_message": "مرحباً، أهلاً بك في تطبيق تذكير آية القرآن!",
-    "islamic_companion": "الرفيق الإسلامي",
+    "appName": "الرفيق الإسلامي",
     "daily_guidance_prayers": "الهداية اليومية والأدعية",
     "tabs": {
         "duas": "الأدعية",
@@ -19,5 +19,9 @@
         "forgiveness": "المغفرة",
         "gratitude": "الامتنان",
         "sleeping": "النوم"
+    },
+    "footer": {
+        "about": "حول",
+        "privacy": "سياسة الخصوصية"
     }
 }

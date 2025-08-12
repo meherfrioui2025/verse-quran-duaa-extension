@@ -11,7 +11,7 @@ const Header: FC = () => {
         <div className="flex items-center justify-center">
           <div>
             <h1 className="text-xl font-bold tracking-wide">
-              {t("islamic_companion")}
+              {t("appName")}
             </h1>
             <p className="text-sm text-white/80 font-medium">
               {t("daily_guidance_prayers")}

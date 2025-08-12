@@ -1,6 +1,6 @@
 {
     "welcome_message": "Bonjour, bienvenue dans QuranVerse Reminder !",
-    "islamic_companion": "Compagnon Islamique",
+    "appName": "Compagnon Islamique",
     "daily_guidance_prayers": "Guidance quotidienne et prières",
     "tabs": {
         "duas": "Douas",
@@ -19,5 +19,9 @@
         "forgiveness": "Pardon",
         "gratitude": "Gratitude",
         "sleeping": "Sommeil"
+    },
+    "footer": {
+        "about": "À propos",
+        "privacy": "Politique de confidentialité"
     }
 }

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     >
       {/* Left/Right side depending on language */}
       <div className={`${currentLanguage==="ar" ? "order-2" : "order-1"}`}>
-        © {new Date().getFullYear()} {t("footer.appName", "Islamic Companion")}
+        © {new Date().getFullYear()} {t("appName", "Islamic Companion")}
       </div>
 
       <div
