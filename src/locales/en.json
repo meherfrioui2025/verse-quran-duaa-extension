@@ -35,5 +35,6 @@
         "page": "Page",
         "of": "of",
         "itemsPerPage": "Items per page"
-    }
+    },
+     "loading": "Loading..."
 }

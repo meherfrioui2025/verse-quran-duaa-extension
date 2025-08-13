@@ -20,3 +20,22 @@ export interface Dua {
   text: string;
   title: string;
 }
+
+export type Verse = {
+  chapter: number;
+  verse: number;
+  text: string;
+  title: string;
+};
+
+export interface Chapter {
+  id: number;
+  name: string;
+  name_en: string;
+  name_fr: string;
+}
+
+export interface SelectOption {
+  label: string;
+  value: number;
+}

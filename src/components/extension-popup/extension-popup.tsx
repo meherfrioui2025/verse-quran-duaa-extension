@@ -5,6 +5,7 @@ import Footer from "../footer/footer";
 import { TabType } from "../../types";
 import DuaaTab from "../duaa-tab";
 import Header from "../header";
+import VerseTab from "../verse-tab";
 
 const ExtensionPopup = () => {
   const [activeTab, setActiveTab] = useState<TabType>("duas");
@@ -15,8 +16,9 @@ const ExtensionPopup = () => {
       <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
       <div className="overflow-y-auto max-h-96 h-fit p-2">
         {activeTab === "duas" && <DuaaTab />}
+        {activeTab === "verses" && <VerseTab />}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

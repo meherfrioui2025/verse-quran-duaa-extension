@@ -1,0 +1,800 @@
+[
+  {
+    "id": 1,
+    "name": "الفاتحة",
+    "name_en": "Al-Fatihah",
+    "name_fr": "L'ouverture",
+    "total_verses": 7
+  },
+  {
+    "id": 2,
+    "name": "البقرة",
+    "name_en": "Al-Baqarah",
+    "name_fr": "La vache",
+    "total_verses": 286
+  },
+  {
+    "id": 3,
+    "name": "آل عمران",
+    "name_en": "Ali 'Imran",
+    "name_fr": "La famille de 'imran",
+    "total_verses": 200
+  },
+  {
+    "id": 4,
+    "name": "النساء",
+    "name_en": "An-Nisa",
+    "name_fr": "Les femmes",
+    "total_verses": 176
+  },
+  {
+    "id": 5,
+    "name": "المائدة",
+    "name_en": "Al-Ma'idah",
+    "name_fr": "La table servie",
+    "total_verses": 120
+  },
+  {
+    "id": 6,
+    "name": "الأنعام",
+    "name_en": "Al-An'am",
+    "name_fr": "Les bestiaux",
+    "total_verses": 165
+  },
+  {
+    "id": 7,
+    "name": "الأعراف",
+    "name_en": "Al-A'raf",
+    "name_fr": "Al-A'raf",
+    "total_verses": 206
+  },
+  {
+    "id": 8,
+    "name": "الأنفال",
+    "name_en": "Al-Anfal",
+    "name_fr": "Le butin",
+    "total_verses": 75
+  },
+  {
+    "id": 9,
+    "name": "التوبة",
+    "name_en": "At-Tawbah",
+    "name_fr": "Le repentir",
+    "total_verses": 129
+  },
+  {
+    "id": 10,
+    "name": "يونس",
+    "name_en": "Yunus",
+    "name_fr": "Jonas",
+    "total_verses": 109
+  },
+  {
+    "id": 11,
+    "name": "هود",
+    "name_en": "Hud",
+    "name_fr": "Houd",
+    "total_verses": 123
+  },
+  {
+    "id": 12,
+    "name": "يوسف",
+    "name_en": "Yusuf",
+    "name_fr": "Joseph",
+    "total_verses": 111
+  },
+  {
+    "id": 13,
+    "name": "الرعد",
+    "name_en": "Ar-Ra'd",
+    "name_fr": "Le tonnerre",
+    "total_verses": 43
+  },
+  {
+    "id": 14,
+    "name": "ابراهيم",
+    "name_en": "Ibrahim",
+    "name_fr": "Abraham",
+    "total_verses": 52
+  },
+  {
+    "id": 15,
+    "name": "الحجر",
+    "name_en": "Al-Hijr",
+    "name_fr": "Al-Hijr",
+    "total_verses": 99
+  },
+  {
+    "id": 16,
+    "name": "النحل",
+    "name_en": "An-Nahl",
+    "name_fr": "Les abeilles",
+    "total_verses": 128
+  },
+  {
+    "id": 17,
+    "name": "الإسراء",
+    "name_en": "Al-Isra",
+    "name_fr": "Le voyage nocturne",
+    "total_verses": 111
+  },
+  {
+    "id": 18,
+    "name": "الكهف",
+    "name_en": "Al-Kahf",
+    "name_fr": "La caverne",
+    "total_verses": 110
+  },
+  {
+    "id": 19,
+    "name": "مريم",
+    "name_en": "Maryam",
+    "name_fr": "Marie",
+    "total_verses": 98
+  },
+  {
+    "id": 20,
+    "name": "طه",
+    "name_en": "Taha",
+    "name_fr": "Ta-Ha",
+    "total_verses": 135
+  },
+  {
+    "id": 21,
+    "name": "الأنبياء",
+    "name_en": "Al-Anbya",
+    "name_fr": "Les prophètes",
+    "total_verses": 112
+  },
+  {
+    "id": 22,
+    "name": "الحج",
+    "name_en": "Al-Hajj",
+    "name_fr": "Le pèlerinage",
+    "total_verses": 78
+  },
+  {
+    "id": 23,
+    "name": "المؤمنون",
+    "name_en": "Al-Mu'minun",
+    "name_fr": "Les croyants",
+    "total_verses": 118
+  },
+  {
+    "id": 24,
+    "name": "النور",
+    "name_en": "An-Nur",
+    "name_fr": "La lumière",
+    "total_verses": 64
+  },
+  {
+    "id": 25,
+    "name": "الفرقان",
+    "name_en": "Al-Furqan",
+    "name_fr": "Le discernement",
+    "total_verses": 77
+  },
+  {
+    "id": 26,
+    "name": "الشعراء",
+    "name_en": "Ash-Shu'ara",
+    "name_fr": "Les poètes",
+    "total_verses": 227
+  },
+  {
+    "id": 27,
+    "name": "النمل",
+    "name_en": "An-Naml",
+    "name_fr": "Les fourmis",
+    "total_verses": 93
+  },
+  {
+    "id": 28,
+    "name": "القصص",
+    "name_en": "Al-Qasas",
+    "name_fr": "Le récit",
+    "total_verses": 88
+  },
+  {
+    "id": 29,
+    "name": "العنكبوت",
+    "name_en": "Al-'Ankabut",
+    "name_fr": "L'araignée",
+    "total_verses": 69
+  },
+  {
+    "id": 30,
+    "name": "الروم",
+    "name_en": "Ar-Rum",
+    "name_fr": "Les romains",
+    "total_verses": 60
+  },
+  {
+    "id": 31,
+    "name": "لقمان",
+    "name_en": "Luqman",
+    "name_fr": "Louqman",
+    "total_verses": 34
+  },
+  {
+    "id": 32,
+    "name": "السجدة",
+    "name_en": "As-Sajdah",
+    "name_fr": "La prosternation",
+    "total_verses": 30
+  },
+  {
+    "id": 33,
+    "name": "الأحزاب",
+    "name_en": "Al-Ahzab",
+    "name_fr": "Les coalisés",
+    "total_verses": 73
+  },
+  {
+    "id": 34,
+    "name": "سبإ",
+    "name_en": "Saba",
+    "name_fr": "Saba'",
+    "total_verses": 54
+  },
+  {
+    "id": 35,
+    "name": "فاطر",
+    "name_en": "Fatir",
+    "name_fr": "Le Créateur",
+    "total_verses": 45
+  },
+  {
+    "id": 36,
+    "name": "يس",
+    "name_en": "Ya-Sin",
+    "name_fr": "Ya-Sin",
+    "total_verses": 83
+  },
+  {
+    "id": 37,
+    "name": "الصافات",
+    "name_en": "As-Saffat",
+    "name_fr": "Les rangés",
+    "total_verses": 182
+  },
+  {
+    "id": 38,
+    "name": "ص",
+    "name_en": "Sad",
+    "name_fr": "Sad",
+    "total_verses": 88
+  },
+  {
+    "id": 39,
+    "name": "الزمر",
+    "name_en": "Az-Zumar",
+    "name_fr": "Les groupes",
+    "total_verses": 75
+  },
+  {
+    "id": 40,
+    "name": "غافر",
+    "name_en": "Ghafir",
+    "name_fr": "Le Pardonneur",
+    "total_verses": 85
+  },
+  {
+    "id": 41,
+    "name": "فصلت",
+    "name_en": "Fussilat",
+    "name_fr": "Les versets explicites",
+    "total_verses": 54
+  },
+  {
+    "id": 42,
+    "name": "الشورى",
+    "name_en": "Ash-Shuraa",
+    "name_fr": "La concertation",
+    "total_verses": 53
+  },
+  {
+    "id": 43,
+    "name": "الزخرف",
+    "name_en": "Az-Zukhruf",
+    "name_fr": "L'ornement",
+    "total_verses": 89
+  },
+  {
+    "id": 44,
+    "name": "الدخان",
+    "name_en": "Ad-Dukhan",
+    "name_fr": "La fumée",
+    "total_verses": 59
+  },
+  {
+    "id": 45,
+    "name": "الجاثية",
+    "name_en": "Al-Jathiyah",
+    "name_fr": "L'agenouillée",
+    "total_verses": 37
+  },
+  {
+    "id": 46,
+    "name": "الأحقاف",
+    "name_en": "Al-Ahqaf",
+    "name_fr": "Al-Ahqaf",
+    "total_verses": 35
+  },
+  {
+    "id": 47,
+    "name": "محمد",
+    "name_en": "Muhammad",
+    "name_fr": "Mouhammad",
+    "total_verses": 38
+  },
+  {
+    "id": 48,
+    "name": "الفتح",
+    "name_en": "Al-Fath",
+    "name_fr": "La victoire éclatante",
+    "total_verses": 29
+  },
+  {
+    "id": 49,
+    "name": "الحجرات",
+    "name_en": "Al-Hujurat",
+    "name_fr": "Les appartements",
+    "total_verses": 18
+  },
+  {
+    "id": 50,
+    "name": "ق",
+    "name_en": "Qaf",
+    "name_fr": "Qaf",
+    "total_verses": 45
+  },
+  {
+    "id": 51,
+    "name": "الذاريات",
+    "name_en": "Adh-Dhariyat",
+    "name_fr": "Qui éparpillent",
+    "total_verses": 60
+  },
+  {
+    "id": 52,
+    "name": "الطور",
+    "name_en": "At-Tur",
+    "name_fr": "Le mont At-Tour",
+    "total_verses": 49
+  },
+  {
+    "id": 53,
+    "name": "النجم",
+    "name_en": "An-Najm",
+    "name_fr": "L'étoile",
+    "total_verses": 62
+  },
+  {
+    "id": 54,
+    "name": "القمر",
+    "name_en": "Al-Qamar",
+    "name_fr": "La lune",
+    "total_verses": 55
+  },
+  {
+    "id": 55,
+    "name": "الرحمن",
+    "name_en": "Ar-Rahman",
+    "name_fr": "Le Tout Miséricordieux",
+    "total_verses": 78
+  },
+  {
+    "id": 56,
+    "name": "الواقعة",
+    "name_en": "Al-Waqi'ah",
+    "name_fr": "L'inévitable",
+    "total_verses": 96
+  },
+  {
+    "id": 57,
+    "name": "الحديد",
+    "name_en": "Al-Hadid",
+    "name_fr": "Le fer",
+    "total_verses": 29
+  },
+  {
+    "id": 58,
+    "name": "المجادلة",
+    "name_en": "Al-Mujadila",
+    "name_fr": "La discussion",
+    "total_verses": 22
+  },
+  {
+    "id": 59,
+    "name": "الحشر",
+    "name_en": "Al-Hashr",
+    "name_fr": "L'exode",
+    "total_verses": 24
+  },
+  {
+    "id": 60,
+    "name": "الممتحنة",
+    "name_en": "Al-Mumtahanah",
+    "name_fr": "L'éprouvée",
+    "total_verses": 13
+  },
+  {
+    "id": 61,
+    "name": "الصف",
+    "name_en": "As-Saf",
+    "name_fr": "Le rang",
+    "total_verses": 14
+  },
+  {
+    "id": 62,
+    "name": "الجمعة",
+    "name_en": "Al-Jumu'ah",
+    "name_fr": "Le vendredi",
+    "total_verses": 11
+  },
+  {
+    "id": 63,
+    "name": "المنافقون",
+    "name_en": "Al-Munafiqun",
+    "name_fr": "Les hypocrites",
+    "total_verses": 11
+  },
+  {
+    "id": 64,
+    "name": "التغابن",
+    "name_en": "At-Taghabun",
+    "name_fr": "La grande perte",
+    "total_verses": 18
+  },
+  {
+    "id": 65,
+    "name": "الطلاق",
+    "name_en": "At-Talaq",
+    "name_fr": "Le divorce",
+    "total_verses": 12
+  },
+  {
+    "id": 66,
+    "name": "التحريم",
+    "name_en": "At-Tahrim",
+    "name_fr": "L'interdiction",
+    "total_verses": 12
+  },
+  {
+    "id": 67,
+    "name": "الملك",
+    "name_en": "Al-Mulk",
+    "name_fr": "La royauté",
+    "total_verses": 30
+  },
+  {
+    "id": 68,
+    "name": "القلم",
+    "name_en": "Al-Qalam",
+    "name_fr": "La plume",
+    "total_verses": 52
+  },
+  {
+    "id": 69,
+    "name": "الحاقة",
+    "name_en": "Al-Haqqah",
+    "name_fr": "L'inéluctable",
+    "total_verses": 52
+  },
+  {
+    "id": 70,
+    "name": "المعارج",
+    "name_en": "Al-Ma'arij",
+    "name_fr": "Les voies d'ascension",
+    "total_verses": 44
+  },
+  {
+    "id": 71,
+    "name": "نوح",
+    "name_en": "Nuh",
+    "name_fr": "Noé",
+    "total_verses": 28
+  },
+  {
+    "id": 72,
+    "name": "الجن",
+    "name_en": "Al-Jinn",
+    "name_fr": "Les djinns",
+    "total_verses": 28
+  },
+  {
+    "id": 73,
+    "name": "المزمل",
+    "name_en": "Al-Muzzammil",
+    "name_fr": "L'enveloppé",
+    "total_verses": 20
+  },
+  {
+    "id": 74,
+    "name": "المدثر",
+    "name_en": "Al-Muddaththir",
+    "name_fr": "Celui qui se couvre",
+    "total_verses": 56
+  },
+  {
+    "id": 75,
+    "name": "القيامة",
+    "name_en": "Al-Qiyamah",
+    "name_fr": "La résurrection",
+    "total_verses": 40
+  },
+  {
+    "id": 76,
+    "name": "الانسان",
+    "name_en": "Al-Insan",
+    "name_fr": "L'homme",
+    "total_verses": 31
+  },
+  {
+    "id": 77,
+    "name": "المرسلات",
+    "name_en": "Al-Mursalat",
+    "name_fr": "Les envoyés",
+    "total_verses": 50
+  },
+  {
+    "id": 78,
+    "name": "النبإ",
+    "name_en": "An-Naba",
+    "name_fr": "La nouvelle",
+    "total_verses": 40
+  },
+  {
+    "id": 79,
+    "name": "النازعات",
+    "name_en": "An-Nazi'at",
+    "name_fr": "Ceux qui arrachent",
+    "total_verses": 46
+  },
+  {
+    "id": 80,
+    "name": "عبس",
+    "name_en": "'Abasa",
+    "name_fr": "Il s'est renfrogné",
+    "total_verses": 42
+  },
+  {
+    "id": 81,
+    "name": "التكوير",
+    "name_en": "At-Takwir",
+    "name_fr": "L'obscurcissement",
+    "total_verses": 29
+  },
+  {
+    "id": 82,
+    "name": "الإنفطار",
+    "name_en": "Al-Infitar",
+    "name_fr": "La rupture",
+    "total_verses": 19
+  },
+  {
+    "id": 83,
+    "name": "المطففين",
+    "name_en": "Al-Mutaffifin",
+    "name_fr": "Les fraudeurs",
+    "total_verses": 36
+  },
+  {
+    "id": 84,
+    "name": "الإنشقاق",
+    "name_en": "Al-Inshiqaq",
+    "name_fr": "La déchirure",
+    "total_verses": 25
+  },
+  {
+    "id": 85,
+    "name": "البروج",
+    "name_en": "Al-Buruj",
+    "name_fr": "Les constellations",
+    "total_verses": 22
+  },
+  {
+    "id": 86,
+    "name": "الطارق",
+    "name_en": "At-Tariq",
+    "name_fr": "L'astre nocturne",
+    "total_verses": 17
+  },
+  {
+    "id": 87,
+    "name": "الأعلى",
+    "name_en": "Al-A'la",
+    "name_fr": "Le Très-Haut",
+    "total_verses": 19
+  },
+  {
+    "id": 88,
+    "name": "الغاشية",
+    "name_en": "Al-Ghashiyah",
+    "name_fr": "L'enveloppante",
+    "total_verses": 26
+  },
+  {
+    "id": 89,
+    "name": "الفجر",
+    "name_en": "Al-Fajr",
+    "name_fr": "L'aube",
+    "total_verses": 30
+  },
+  {
+    "id": 90,
+    "name": "البلد",
+    "name_en": "Al-Balad",
+    "name_fr": "La cité",
+    "total_verses": 20
+  },
+  {
+    "id": 91,
+    "name": "الشمس",
+    "name_en": "Ash-Shams",
+    "name_fr": "Le soleil",
+    "total_verses": 15
+  },
+  {
+    "id": 92,
+    "name": "الليل",
+    "name_en": "Al-Layl",
+    "name_fr": "La nuit",
+    "total_verses": 21
+  },
+  {
+    "id": 93,
+    "name": "الضحى",
+    "name_en": "Ad-Duhaa",
+    "name_fr": "Le jour montant",
+    "total_verses": 11
+  },
+  {
+    "id": 94,
+    "name": "الشرح",
+    "name_en": "Ash-Sharh",
+    "name_fr": "L'ouverture",
+    "total_verses": 8
+  },
+  {
+    "id": 95,
+    "name": "التين",
+    "name_en": "At-Tin",
+    "name_fr": "Les figues",
+    "total_verses": 8
+  },
+  {
+    "id": 96,
+    "name": "العلق",
+    "name_en": "Al-'Alaq",
+    "name_fr": "L'adhérence",
+    "total_verses": 19
+  },
+  {
+    "id": 97,
+    "name": "القدر",
+    "name_en": "Al-Qadr",
+    "name_fr": "La destinée",
+    "total_verses": 5
+  },
+  {
+    "id": 98,
+    "name": "البينة",
+    "name_en": "Al-Bayyinah",
+    "name_fr": "La preuve",
+    "total_verses": 8
+  },
+  {
+    "id": 99,
+    "name": "الزلزلة",
+    "name_en": "Az-Zalzalah",
+    "name_fr": "Le séisme",
+    "total_verses": 8
+  },
+  {
+    "id": 100,
+    "name": "العاديات",
+    "name_en": "Al-'Adiyat",
+    "name_fr": "Les coursiers",
+    "total_verses": 11
+  },
+  {
+    "id": 101,
+    "name": "القارعة",
+    "name_en": "Al-Qari'ah",
+    "name_fr": "Le fracas",
+    "total_verses": 11
+  },
+  {
+    "id": 102,
+    "name": "التكاثر",
+    "name_en": "At-Takathur",
+    "name_fr": "La course aux richesses",
+    "total_verses": 8
+  },
+  {
+    "id": 103,
+    "name": "العصر",
+    "name_en": "Al-'Asr",
+    "name_fr": "Le temps",
+    "total_verses": 3
+  },
+  {
+    "id": 104,
+    "name": "الهمزة",
+    "name_en": "Al-Humazah",
+    "name_fr": "Les calomniateurs",
+    "total_verses": 9
+  },
+  {
+    "id": 105,
+    "name": "الفيل",
+    "name_en": "Al-Fil",
+    "name_fr": "L'éléphant",
+    "total_verses": 5
+  },
+  {
+    "id": 106,
+    "name": "قريش",
+    "name_en": "Quraysh",
+    "name_fr": "Les Quraysh",
+    "total_verses": 4
+  },
+  {
+    "id": 107,
+    "name": "الماعون",
+    "name_en": "Al-Ma'un",
+    "name_fr": "L'entraide",
+    "total_verses": 7
+  },
+  {
+    "id": 108,
+    "name": "الكوثر",
+    "name_en": "Al-Kawthar",
+    "name_fr": "L'abondance",
+    "total_verses": 3
+  },
+  {
+    "id": 109,
+    "name": "الكافرون",
+    "name_en": "Al-Kafirun",
+    "name_fr": "Les mécréants",
+    "total_verses": 6
+  },
+  {
+    "id": 110,
+    "name": "النصر",
+    "name_en": "An-Nasr",
+    "name_fr": "Le secours",
+    "total_verses": 3
+  },
+  {
+    "id": 111,
+    "name": "المسد",
+    "name_en": "Al-Masad",
+    "name_fr": "Les fibres",
+    "total_verses": 5
+  },
+  {
+    "id": 112,
+    "name": "الإخلاص",
+    "name_en": "Al-Ikhlas",
+    "name_fr": "La sincérité",
+    "total_verses": 4
+  },
+  {
+    "id": 113,
+    "name": "الفلق",
+    "name_en": "Al-Falaq",
+    "name_fr": "L'aube naissante",
+    "total_verses": 5
+  },
+  {
+    "id": 114,
+    "name": "الناس",
+    "name_en": "An-Nas",
+    "name_fr": "Les humains",
+    "total_verses": 6
+  }
+]

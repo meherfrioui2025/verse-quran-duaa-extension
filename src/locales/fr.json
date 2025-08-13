@@ -3,10 +3,10 @@
     "appName": "Compagnon Islamique",
     "daily_guidance_prayers": "Guidance quotidienne et prières",
     "language": {
-    "en": "Anglais",
-    "fr": "Français",
-    "ar": "Arabe"
-  },
+        "en": "Anglais",
+        "fr": "Français",
+        "ar": "Arabe"
+    },
     "tabs": {
         "duas": "Douas",
         "verses": "Versets",
@@ -34,6 +34,7 @@
         "next": "Suivant",
         "page": "Page",
         "of": "sur",
-        "itemsPerPage":"Articles par page"
-    }
+        "itemsPerPage": "Articles par page"
+    },
+    "loading": "Chargement..."
 }
