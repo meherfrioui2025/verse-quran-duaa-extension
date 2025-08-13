@@ -1,11 +1,12 @@
 import { FC } from "react";
+import { language } from "../../../types";
 
 interface SelectOption<T = string | number> {
   value: T;
   label: string;
 }
 
-interface SelectProps<T = string | number> {
+interface SelectProps<T = string | number|language> {
   value: T;
   onChange: (value: T) => void;
   options: SelectOption<T>[];
@@ -26,7 +27,7 @@ const Select: FC<SelectProps> = ({
           typeof value === "number" ? Number(e.target.value) : e.target.value
         )
       }
-      className={`border border-gray-300 rounded-lg px-2 py-1 text-sm bg-white cursor-pointer ${className}`}
+      className={`border border-gray-300 rounded-lg px-2 py-1 mt-6 text-sm bg-white cursor-pointer ${className}`}
     >
       {options.map((opt) => (
         <option key={opt.value} value={opt.value}>

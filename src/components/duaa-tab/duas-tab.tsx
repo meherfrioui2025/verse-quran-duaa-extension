@@ -58,11 +58,18 @@ const DuaaTab: FC<DuaaTabProps> = ({ onToggleBookmark }) => {
           onChange={setSelectedCategory}
         />
       </div>
-
-      <div className="mb-4 flex items-center gap-2">
-        <label htmlFor="itemsPerPage" className="text-sm font-medium">
-          {t("pagination.itemsPerPage") /* add to translation */}
-        </label>
+      <div className="space-y-3">
+        {paginatedData.map((dua) => (
+          <DuaCard key={dua.id} dua={dua} onToggleBookmark={onToggleBookmark} />
+        ))}
+      </div>
+      <div className="flex justify-between">
+        <Pagination
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={setCurrentPage}
+          t={t}
+        />
         <Select
           value={itemsPerPage}
           onChange={(value) => setItemsPerPage(Number(value))}
@@ -75,19 +82,6 @@ const DuaaTab: FC<DuaaTabProps> = ({ onToggleBookmark }) => {
           className="border border-gray-300 rounded-lg px-2 py-1 text-sm bg-white"
         />
       </div>
-
-      <div className="space-y-3">
-        {paginatedData.map((dua) => (
-          <DuaCard key={dua.id} dua={dua} onToggleBookmark={onToggleBookmark} />
-        ))}
-      </div>
-
-      <Pagination
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={setCurrentPage}
-        t={t}
-      />
     </div>
   );
 };

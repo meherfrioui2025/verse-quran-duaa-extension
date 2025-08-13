@@ -36,5 +36,23 @@
         "of": "sur",
         "itemsPerPage": "Articles par page"
     },
-    "loading": "Chargement..."
+    "loading": "Chargement...",
+    "filters": {
+        "all": "Tout",
+        "dua": "Invocations",
+        "verse": "Versets"
+      },
+      "card":{
+        "dua": "Invocation",
+        "noBookmarks": "Aucun signet pour l'instant",
+        "saveFavorites": "Enregistrez vos duas et versets préférés",
+        "invalid_date": "Date invalide",
+        "today": "Aujourd'hui",
+        "yesterday": "Hier",
+        "days_ago": "il y a {{count}} jours",
+        "bookmarked":"Favori"
+      },
+      "search":{
+        "searchVersesPlaceholder": "Rechercher des versets..."
+      }
 }

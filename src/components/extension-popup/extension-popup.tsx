@@ -8,6 +8,7 @@ import Footer from "../footer/footer";
 import VerseTab from "../verse-tab";
 import DuaaTab from "../duaa-tab";
 import Header from "../header";
+import BookmarksTab from "../bookmarks-tab";
 
 const ExtensionPopup = () => {
   const [activeTab, setActiveTab] = useState<TabType>("duas");
@@ -39,7 +40,7 @@ const ExtensionPopup = () => {
     );
   };
 
-  console.log("bookmarks", bookmarks);
+  console.log("bookmarks", bookmarks, currentLanguage);
 
   return (
     <div className="h-full flex flex-col bg-white w-lg">
@@ -48,6 +49,13 @@ const ExtensionPopup = () => {
       <div className="overflow-y-auto max-h-96 h-fit p-2">
         {activeTab === "duas" && <DuaaTab onToggleBookmark={toggleBookmark} />}
         {activeTab === "verses" && <VerseTab />}
+        {activeTab === "bookmarks" && (
+          <BookmarksTab
+            bookmarks={bookmarks.filter(
+              (item) => item.lang === currentLanguage
+            )}
+          />
+        )}
       </div>
       <Footer />
     </div>

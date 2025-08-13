@@ -36,5 +36,23 @@
         "of": "of",
         "itemsPerPage": "Items per page"
     },
-     "loading": "Loading..."
+     "loading": "Loading...",
+     "filters": {
+        "all": "All",
+        "dua": "Duas",
+        "verse": "Verses"
+      },
+      "card":{
+        "dua": "Dua",
+        "noBookmarks": "No bookmarks yet",
+        "saveFavorites": "Save your favorite duas and verses",
+        "invalid_date": "Invalid date",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "days_ago": "{{count}} days ago",
+        "bookmarked":"Bookmarked"
+      },
+      "search":{
+        "searchVersesPlaceholder": "Search verses..."
+      }
 }

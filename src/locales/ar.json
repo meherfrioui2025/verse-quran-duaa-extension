@@ -36,6 +36,24 @@
         "of": "من",
         "itemsPerPage": "عدد العناصر لكل صفحة"
     },
-    "loading": "جاري التحميل..."
+    "loading": "جاري التحميل...",
+    "filters": {
+        "all": "الكل",
+        "dua": "الأدعية",
+        "verse": "الآيات"
+      },
+      "card":{
+        "dua": "دعاء",
+        "noBookmarks": "لا توجد علامات محفوظة بعد",
+        "saveFavorites": "احفظ أدعيتك وآياتك المفضلة",
+        "invalid_date": "تاريخ غير صالح",
+        "today": "اليوم",
+        "yesterday": "أمس",
+        "days_ago": "منذ {{count}} أيام",
+        "bookmarked":"مُفضّل"
+      },
+      "search":{
+        "searchVersesPlaceholder": "ابحث في الآيات..."
+      }
 
 }
