@@ -1,18 +1,32 @@
-import { Dua } from "../../../types";
+import { BookmarkedItem, Dua, language } from "../../../types";
 import Button from "../../ui/button";
 import Card from "../../ui/card";
+import { useExtensionTranslation } from "../../../hooks/useExtensionTranslation";
 
 interface DuaCardProps {
   dua: Dua;
+  onToggleBookmark: (item: BookmarkedItem) => void;
 }
 
-export const DuaCard: React.FC<DuaCardProps> = ({ dua }) => {
+export const DuaCard: React.FC<DuaCardProps> = ({ dua, onToggleBookmark }) => {
+  const { currentLanguage } = useExtensionTranslation();
   return (
     <Card
       title={<span>{dua.title}</span>}
       headerActions={
         <>
-          <Button className="transition-colors text-gray-400 hover:text-[var(--islamic-gold)]">
+          <Button
+            className="transition-colors text-gray-400 hover:text-[var(--islamic-gold)]"
+            onClick={() =>
+              onToggleBookmark({
+                id: dua.id,
+                title: dua.title,
+                type: "dua",
+                dateBookmarked: new Date().toISOString(),
+                lang: currentLanguage as language,
+              })
+            }
+          >
             <span className={"mdi mdi-star text-lg"} />
           </Button>
 

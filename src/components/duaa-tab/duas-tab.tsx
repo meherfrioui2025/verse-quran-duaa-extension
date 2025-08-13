@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
 import ar from "../../data/duaa/duaa-ar.json";
@@ -6,13 +6,17 @@ import en from "../../data/duaa/duaa-en.json";
 import fr from "../../data/duaa/duaa-fr.json";
 import { DuaCard } from "./duaa-card/duaa";
 import Pagination from "../ui/pagination";
-import { DuaCategory } from "../../types";
+import { BookmarkedItem, DuaCategory } from "../../types";
 import Category from "./category";
 import Select from "../ui/select";
 
 const translations = { ar, en, fr };
 
-const DuaaTab = () => {
+interface DuaaTabProps {
+  onToggleBookmark: (item: BookmarkedItem) => void;
+}
+
+const DuaaTab: FC<DuaaTabProps> = ({ onToggleBookmark }) => {
   const [selectedCategory, setSelectedCategory] =
     useState<DuaCategory>("morning");
 
@@ -73,8 +77,8 @@ const DuaaTab = () => {
       </div>
 
       <div className="space-y-3">
-        {paginatedData.map((dua, idx) => (
-          <DuaCard key={`${currentLanguage}-${idx}`} dua={dua} />
+        {paginatedData.map((dua) => (
+          <DuaCard key={dua.id} dua={dua} onToggleBookmark={onToggleBookmark} />
         ))}
       </div>
 

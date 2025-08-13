@@ -1,22 +1,102 @@
 [
-  { "title": "Supplication Before Sleeping", "text": "In Your name, O Allah, I die and I live." },
-  { "title": "Supplication Upon Waking Up", "text": "All praise is for Allah who gave us life after having taken it from us, and unto Him is the resurrection." },
-  { "title": "Supplication Entering the Bathroom", "text": "O Allah, I seek refuge in You from male and female devils." },
-  { "title": "Supplication Leaving the Bathroom", "text": "I ask You for Your forgiveness." },
-  { "title": "Supplication Before Eating", "text": "In the name of Allah." },
-  { "title": "Supplication If Forgetting Bismillah at the Beginning of a Meal", "text": "In the name of Allah at its beginning and at its end." },
-  { "title": "Supplication After Eating", "text": "All praise is for Allah who fed me this and provided it for me without any might nor power from myself." },
-  { "title": "Supplication Entering the Mosque", "text": "O Allah, open for me the gates of Your mercy." },
-  { "title": "Supplication Leaving the Mosque", "text": "O Allah, I ask You from Your bounty." },
-  { "title": "Supplication Before Performing Ablution", "text": "In the name of Allah." },
-  { "title": "Supplication After Performing Ablution", "text": "I bear witness that there is no deity worthy of worship except Allah alone with no partner, and I bear witness that Muhammad is His servant and Messenger. O Allah, make me among those who repent and purify themselves." },
-  { "title": "Supplication When Dressing", "text": "All praise is for Allah who has clothed me with this garment and provided it for me without any might nor power from myself." },
-  { "title": "Supplication When Undressing", "text": "In the name of Allah." },
-  { "title": "Supplication Before Leaving the House", "text": "In the name of Allah, I place my trust in Allah, and there is no might nor power except with Allah." },
-  { "title": "Supplication Upon Entering the House", "text": "In the name of Allah we enter, and in the name of Allah we leave, and upon our Lord we place our trust." },
-  { "title": "Supplication for Mounting an Animal or Vehicle", "text": "Glory is to Him who has subjected this to us, and we could never have it by our efforts. Surely, to our Lord we will return." },
-  { "title": "Supplication When Starting a Journey", "text": "O Allah, we ask You on this journey of ours for righteousness and piety, and for deeds that please You." },
-  { "title": "Supplication Upon Entering the Market", "text": "There is no god but Allah alone, without partner. His is the dominion and His is the praise. He gives life and causes death, and He is ever-living and does not die. In His hand is all good, and He is over all things competent." },
-  { "title": "Supplication Upon Hearing Good News", "text": "All praise is for Allah." },
-  { "title": "Supplication Upon Hearing Bad News", "text": "Indeed, to Allah we belong and to Him we shall return." }
+  {
+    "id": "duaa-en-1",
+    "title": "Supplication Before Sleeping",
+    "text": "In Your name, O Allah, I die and I live."
+  },
+  {
+    "id": "duaa-en-2",
+    "title": "Supplication Upon Waking Up",
+    "text": "All praise is for Allah who gave us life after having taken it from us, and unto Him is the resurrection."
+  },
+  {
+    "id": "duaa-en-3",
+    "title": "Supplication Entering the Bathroom",
+    "text": "O Allah, I seek refuge in You from male and female devils."
+  },
+  {
+    "id": "duaa-en-4",
+    "title": "Supplication Leaving the Bathroom",
+    "text": "I ask You for Your forgiveness."
+  },
+  {
+    "id": "duaa-en-5",
+    "title": "Supplication Before Eating",
+    "text": "In the name of Allah."
+  },
+  {
+    "id": "duaa-en-6",
+    "title": "Supplication If Forgetting Bismillah at the Beginning of a Meal",
+    "text": "In the name of Allah at its beginning and at its end."
+  },
+  {
+    "id": "duaa-en-7",
+    "title": "Supplication After Eating",
+    "text": "All praise is for Allah who fed me this and provided it for me without any might nor power from myself."
+  },
+  {
+    "id": "duaa-en-8",
+    "title": "Supplication Entering the Mosque",
+    "text": "O Allah, open for me the gates of Your mercy."
+  },
+  {
+    "id": "duaa-en-9",
+    "title": "Supplication Leaving the Mosque",
+    "text": "O Allah, I ask You from Your bounty."
+  },
+  {
+    "id": "duaa-en-10",
+    "title": "Supplication Before Performing Ablution",
+    "text": "In the name of Allah."
+  },
+  {
+    "id": "duaa-en-11",
+    "title": "Supplication After Performing Ablution",
+    "text": "I bear witness that there is no deity worthy of worship except Allah alone with no partner, and I bear witness that Muhammad is His servant and Messenger. O Allah, make me among those who repent and purify themselves."
+  },
+  {
+    "id": "duaa-en-12",
+    "title": "Supplication When Dressing",
+    "text": "All praise is for Allah who has clothed me with this garment and provided it for me without any might nor power from myself."
+  },
+  {
+    "id": "duaa-en-13",
+    "title": "Supplication When Undressing",
+    "text": "In the name of Allah."
+  },
+  {
+    "id": "duaa-en-14",
+    "title": "Supplication Before Leaving the House",
+    "text": "In the name of Allah, I place my trust in Allah, and there is no might nor power except with Allah."
+  },
+  {
+    "id": "duaa-en-15",
+    "title": "Supplication Upon Entering the House",
+    "text": "In the name of Allah we enter, and in the name of Allah we leave, and upon our Lord we place our trust."
+  },
+  {
+    "id": "duaa-en-16",
+    "title": "Supplication for Mounting an Animal or Vehicle",
+    "text": "Glory is to Him who has subjected this to us, and we could never have it by our efforts. Surely, to our Lord we will return."
+  },
+  {
+    "id": "duaa-en-17",
+    "title": "Supplication When Starting a Journey",
+    "text": "O Allah, we ask You on this journey of ours for righteousness and piety, and for deeds that please You."
+  },
+  {
+    "id": "duaa-en-18",
+    "title": "Supplication Upon Entering the Market",
+    "text": "There is no god but Allah alone, without partner. His is the dominion and His is the praise. He gives life and causes death, and He is ever-living and does not die. In His hand is all good, and He is over all things competent."
+  },
+  {
+    "id": "duaa-en-19",
+    "title": "Supplication Upon Hearing Good News",
+    "text": "All praise is for Allah."
+  },
+  {
+    "id": "duaa-en-20",
+    "title": "Supplication Upon Hearing Bad News",
+    "text": "Indeed, to Allah we belong and to Him we shall return."
+  }
 ]

@@ -2,6 +2,7 @@ import { FC } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
 import Select from "../ui/select";
+import { language } from "../../types";
 
 const Header: FC = () => {
   const { t, currentLanguage, changeLanguage } = useExtensionTranslation();
@@ -21,7 +22,7 @@ const Header: FC = () => {
         <div className="flex items-center space-x-2">
           <Select
             value={currentLanguage}
-            onChange={(value) => changeLanguage(String(value))}
+            onChange={(value) => changeLanguage(value as language)}
             className="appearance-none border border-gray-300 rounded-md px-3 py-2 bg-white text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 cursor-pointer pr-8"
             options={[
               { label: `🇺🇸 ${t("language.en")}`, value: "en" },

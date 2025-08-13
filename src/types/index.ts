@@ -17,6 +17,7 @@ export type DuaCategory =
   | "sleeping";
 
 export interface Dua {
+  id: string;
   text: string;
   title: string;
 }
@@ -38,4 +39,14 @@ export interface Chapter {
 export interface SelectOption {
   label: string;
   value: number;
+}
+
+export type language = "en" | "fr" | "ar";
+
+export interface BookmarkedItem {
+  id: string;
+  type: "dua" | "verse";
+  title: string;
+  dateBookmarked?: string;
+  lang: language;
 }
