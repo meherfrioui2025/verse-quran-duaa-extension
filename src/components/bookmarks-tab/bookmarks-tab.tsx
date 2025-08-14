@@ -7,9 +7,13 @@ import Button from "../ui/button";
 
 interface BookmarksTabProps {
   bookmarks: BookmarkedItem[];
+  onRemoveBookmark: (id: string) => void;
 }
 
-const BookmarksTab: FC<BookmarksTabProps> = ({ bookmarks }) => {
+const BookmarksTab: FC<BookmarksTabProps> = ({
+  bookmarks,
+  onRemoveBookmark,
+}) => {
   const [filter, setFilter] = useState<"all" | "dua" | "verse">("all");
   const { t } = useExtensionTranslation();
 
@@ -52,10 +56,11 @@ const BookmarksTab: FC<BookmarksTabProps> = ({ bookmarks }) => {
                 id: item.id,
                 title: item.title,
                 type: item.type,
-                text: item.title,
+                text: item.text,
                 lang: item.lang,
-                dateBookmarked:item.dateBookmarked
+                dateBookmarked: item.dateBookmarked,
               }}
+              onRemoveBookmark={onRemoveBookmark}
             />
           ))}
         </div>

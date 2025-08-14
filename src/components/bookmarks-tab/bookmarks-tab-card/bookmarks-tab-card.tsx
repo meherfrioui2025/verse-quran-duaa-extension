@@ -7,9 +7,13 @@ import Card from "../../ui/card";
 
 interface BookmarksTabCardProps {
   item: BookmarkedItem & { text: string };
+  onRemoveBookmark: (id: string) => void;
 }
 
-const BookmarksTabCard: FC<BookmarksTabCardProps> = ({ item }) => {
+const BookmarksTabCard: FC<BookmarksTabCardProps> = ({
+  item,
+  onRemoveBookmark,
+}) => {
   const formatDate = (dateString: string) => {
     console.log(dateString, "data string:");
     const date = new Date(dateString);
@@ -26,6 +30,7 @@ const BookmarksTabCard: FC<BookmarksTabCardProps> = ({ item }) => {
   };
 
   const { t } = useExtensionTranslation();
+  console.log('item.type ',item )
   return (
     <Card
       title={
@@ -50,21 +55,13 @@ const BookmarksTabCard: FC<BookmarksTabCardProps> = ({ item }) => {
         </div>
       }
       headerActions={
-        <>
-          <Button
-            className="transition-colors text-gray-400 hover:text-[var(--islamic-gold)]"
-            title="Toggle Bookmark"
-          >
-            <span className="mdi mdi-trash-can text-lg" />
-          </Button>
-
-          <Button
-            className="text-gray-400 hover:text-[var(--islamic-gold)]"
-            title="Add to Favorites"
-          >
-            <span className="mdi mdi-heart text-lg" />
-          </Button>
-        </>
+        <Button
+          className="transition-colors text-gray-400 hover:text-[var(--islamic-gold)]"
+          title="Toggle Bookmark"
+          onClick={() => onRemoveBookmark(item.id)}
+        >
+          <span className="mdi mdi-trash-can text-lg text-red-500" />
+        </Button>
       }
     >
       <div

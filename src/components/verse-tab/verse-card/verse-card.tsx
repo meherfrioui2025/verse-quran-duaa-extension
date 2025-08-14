@@ -1,13 +1,20 @@
-import { Verse } from "../../../types";
+import { useExtensionTranslation } from "../../../hooks/useExtensionTranslation";
+import { BookmarkedItem, language, Verse } from "../../../types";
 import Button from "../../ui/button";
 import Card from "../../ui/card";
 
-
 export interface VerseCardProps {
   verse: Verse;
+  onToggleBookmark: (item: BookmarkedItem) => void;
+  isBookmarked: (id: string) => boolean;
 }
 
-const VerseCard: React.FC<VerseCardProps> = ({ verse }) => {
+const VerseCard: React.FC<VerseCardProps> = ({
+  verse,
+  isBookmarked,
+  onToggleBookmark,
+}) => {
+  const { currentLanguage } = useExtensionTranslation();
   return (
     <Card
       title={
@@ -21,7 +28,23 @@ const VerseCard: React.FC<VerseCardProps> = ({ verse }) => {
             <span className={"mdi mdi-star text-lg"} />
           </Button>
 
-          <Button className="bookmark-btn text-gray-400 hover:text-[var(--islamic-gold)]">
+          <Button
+            className={`bookmark-btn ${
+              isBookmarked(String(verse.verse))
+                ? "text-islamic-gold active"
+                : "text-gray-400 hover:text-islamic-gold"
+            }`}
+            onClick={() =>
+              onToggleBookmark({
+                id: String(verse.verse),
+                title: verse.title,
+                text: verse.text,
+                type: "verse",
+                dateBookmarked: new Date().toISOString(),
+                lang: currentLanguage as language,
+              })
+            }
+          >
             <span className={"mdi mdi-heart text-lg"} />
           </Button>
         </>

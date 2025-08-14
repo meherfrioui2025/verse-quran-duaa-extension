@@ -1,14 +1,19 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo, FC } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
-import { Chapter, SelectOption, Verse } from "../../types";
+import { BookmarkedItem, Chapter, SelectOption, Verse } from "../../types";
 import chapters from "../../data/chapters/chapters.json";
 import { searchVerses } from "../../utils/search-verse";
 import VerseCard from "./verse-card/verse-card";
 import Pagination from "../ui/pagination";
 import Select from "../ui/select";
 
-const VerseTab = () => {
+interface VerseTab {
+   onToggleBookmark: (item: BookmarkedItem) => void;
+    isBookmarked: (id: string) => boolean;
+}
+
+const VerseTab:FC<VerseTab> = ({isBookmarked,onToggleBookmark}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [data, setData] = useState<Verse[]>([]);
@@ -82,7 +87,7 @@ const VerseTab = () => {
 
       <div className="space-y-3">
         {paginatedData.map((verse) => (
-          <VerseCard key={`${verse.chapter}-${verse.verse}`} verse={verse} />
+          <VerseCard key={`${verse.chapter}-${verse.verse}`} verse={verse} onToggleBookmark={onToggleBookmark} isBookmarked={isBookmarked} />
         ))}
       </div>
       <div className="flex justify-between items-center">

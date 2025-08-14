@@ -50,7 +50,8 @@
         "today": "Aujourd'hui",
         "yesterday": "Hier",
         "days_ago": "il y a {{count}} jours",
-        "bookmarked":"Favori"
+        "bookmarked":"Favori",
+         "verse": "Verset"
       },
       "search":{
         "searchVersesPlaceholder": "Rechercher des versets..."

@@ -50,7 +50,8 @@
         "today": "Today",
         "yesterday": "Yesterday",
         "days_ago": "{{count}} days ago",
-        "bookmarked":"Bookmarked"
+        "bookmarked":"Bookmarked",
+        "verse": "Verse"
       },
       "search":{
         "searchVersesPlaceholder": "Search verses..."

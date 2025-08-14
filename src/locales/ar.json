@@ -50,7 +50,8 @@
         "today": "اليوم",
         "yesterday": "أمس",
         "days_ago": "منذ {{count}} أيام",
-        "bookmarked":"مُفضّل"
+        "bookmarked":"مُفضّل",
+        "verse": "آية"
       },
       "search":{
         "searchVersesPlaceholder": "ابحث في الآيات..."

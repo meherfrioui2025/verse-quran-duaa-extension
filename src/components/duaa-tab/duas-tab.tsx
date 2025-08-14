@@ -1,12 +1,12 @@
 import { useState, useEffect, FC } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
+import { BookmarkedItem, DuaCategory } from "../../types";
 import ar from "../../data/duaa/duaa-ar.json";
 import en from "../../data/duaa/duaa-en.json";
 import fr from "../../data/duaa/duaa-fr.json";
 import { DuaCard } from "./duaa-card/duaa";
 import Pagination from "../ui/pagination";
-import { BookmarkedItem, DuaCategory } from "../../types";
 import Category from "./category";
 import Select from "../ui/select";
 
@@ -14,9 +14,10 @@ const translations = { ar, en, fr };
 
 interface DuaaTabProps {
   onToggleBookmark: (item: BookmarkedItem) => void;
+  isBookmarked: (id: string) => boolean;
 }
 
-const DuaaTab: FC<DuaaTabProps> = ({ onToggleBookmark }) => {
+const DuaaTab: FC<DuaaTabProps> = ({ onToggleBookmark ,isBookmarked}) => {
   const [selectedCategory, setSelectedCategory] =
     useState<DuaCategory>("morning");
 
@@ -60,7 +61,7 @@ const DuaaTab: FC<DuaaTabProps> = ({ onToggleBookmark }) => {
       </div>
       <div className="space-y-3">
         {paginatedData.map((dua) => (
-          <DuaCard key={dua.id} dua={dua} onToggleBookmark={onToggleBookmark} />
+          <DuaCard key={dua.id} dua={dua} onToggleBookmark={onToggleBookmark} isBookmarked={isBookmarked} />
         ))}
       </div>
       <div className="flex justify-between">

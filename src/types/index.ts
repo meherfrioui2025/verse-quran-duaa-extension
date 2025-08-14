@@ -47,6 +47,7 @@ export interface BookmarkedItem {
   id: string;
   type: "dua" | "verse";
   title: string;
+  text: string;
   dateBookmarked?: string;
   lang: language;
 }
