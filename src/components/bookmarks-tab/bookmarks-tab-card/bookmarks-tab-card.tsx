@@ -15,7 +15,6 @@ const BookmarksTabCard: FC<BookmarksTabCardProps> = ({
   onRemoveBookmark,
 }) => {
   const formatDate = (dateString: string) => {
-    console.log(dateString, "data string:");
     const date = new Date(dateString);
     if (isNaN(date.getTime())) return t("card.invalid_date");
 
@@ -30,7 +29,6 @@ const BookmarksTabCard: FC<BookmarksTabCardProps> = ({
   };
 
   const { t } = useExtensionTranslation();
-  console.log('item.type ',item )
   return (
     <Card
       title={
