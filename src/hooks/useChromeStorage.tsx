@@ -11,6 +11,7 @@ function useChromeStorage<T>(key: string, initialValue: T) {
         chrome.storage.local.set({ [key]: initialValue });
       }
     });
+     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key]);
 
   const setValue = (value: T) => {

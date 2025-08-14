@@ -1,8 +1,9 @@
-import { useExtensionTranslation } from "./hooks/useExtensionTranslation";
-import ExtensionPopup from "./components/extension-popup";
 import { useEffect } from "react";
 
-export default function LanguageSwitcher() {
+import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
+import ExtensionPopup from "../../components/extension-popup";
+
+const   App=()=> {
   const { t, currentLanguage } = useExtensionTranslation();
 
   useEffect(() => {
@@ -16,3 +17,6 @@ export default function LanguageSwitcher() {
     </div>
   );
 }
+
+
+export default App
