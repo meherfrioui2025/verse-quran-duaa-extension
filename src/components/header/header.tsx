@@ -12,11 +12,18 @@ const Header: FC = () => {
       <div className="absolute inset-0 bg-black/10"></div>
       <div className="relative flex items-center justify-between">
         <div className="flex items-center justify-center">
-          <div>
-            <h1 className="text-xl font-bold tracking-wide">{t("appName")}</h1>
-            <p className="text-sm text-white/80 font-medium">
-              {t("daily_guidance_prayers")}
-            </p>
+          <div className="flex items-center justify-center gap-2">
+            <div className="bg-white h-10 w-10 rounded-full flex items-center justify-center">
+              <span className="mdi mdi-moon-waxing-crescent text-2xl text-green-700" />
+            </div>
+            <div>
+              <h1 className="text-xl font-bold tracking-wide">
+                {t("appName")}
+              </h1>
+              <p className="text-sm text-white/80 font-medium">
+                {t("daily_guidance_prayers")}
+              </p>
+            </div>
           </div>
         </div>
         <div className="flex items-center space-x-2">

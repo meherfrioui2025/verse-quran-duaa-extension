@@ -1,26 +1,34 @@
 import { useState, useEffect, useMemo, FC } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
-import {
-  BookmarkedItem,
-  Chapter,
-  language,
-  SelectOption,
-  Verse,
-} from "../../types";
+import { getDailyVerse } from "../../utils/getDailyVerses";
 import chapters from "../../data/chapters/chapters.json";
 import { searchVerses } from "../../utils/search-verse";
 import VerseCard from "./verse-card/verse-card";
 import Pagination from "../ui/pagination";
 import Select from "../ui/select";
-import { getDailyVerse } from "../../utils/getDailyVerses";
+import {
+  BookmarkedItem,
+  Chapter,
+  FavoriteItem,
+  language,
+  SelectOption,
+  Verse,
+} from "../../types";
 
 interface VerseTab {
   onToggleBookmark: (item: BookmarkedItem) => void;
   isBookmarked: (id: string) => boolean;
+  onToggleFavorites: (item: FavoriteItem) => void;
+  isFavorite: (id: string) => boolean;
 }
 
-const VerseTab: FC<VerseTab> = ({ isBookmarked, onToggleBookmark }) => {
+const VerseTab: FC<VerseTab> = ({
+  isBookmarked,
+  onToggleBookmark,
+  isFavorite,
+  onToggleFavorites,
+}) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [data, setData] = useState<Verse[]>([]);
@@ -129,7 +137,7 @@ const VerseTab: FC<VerseTab> = ({ isBookmarked, onToggleBookmark }) => {
             </div>
 
             <div
-              className={`font-arabic mb-4 text-white bg-white/10 p-4 rounded-lg backdrop-blur-sm`}
+              className={`mb-4 text-white bg-white/10 p-4 rounded-lg backdrop-blur-sm`}
               style={{ lineHeight: 1.8 }}
             >
               {dailyVerse.text}
@@ -145,6 +153,8 @@ const VerseTab: FC<VerseTab> = ({ isBookmarked, onToggleBookmark }) => {
             verse={verse}
             onToggleBookmark={onToggleBookmark}
             isBookmarked={isBookmarked}
+            onToggleFavorites={onToggleFavorites}
+            isFavorite={isFavorite}
           />
         ))}
       </div>

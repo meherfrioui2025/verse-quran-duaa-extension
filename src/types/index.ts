@@ -51,3 +51,12 @@ export interface BookmarkedItem {
   dateBookmarked?: string;
   lang: language;
 }
+
+export interface FavoriteItem {
+  id: string;
+  type: "dua" | "verse";
+  title: string;
+  text: string;
+  dateFavorite?: string;
+  lang: language;
+}

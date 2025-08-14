@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
-import { BookmarkedItem, language, TabType } from "../../types";
+import { BookmarkedItem, FavoriteItem, language, TabType } from "../../types";
 import useChromeStorage from "../../hooks/useChromeStorage";
 import TabNavigation from "../tab-navigation";
 import BookmarksTab from "../bookmarks-tab";
@@ -18,6 +18,11 @@ const ExtensionPopup = () => {
 
   const [bookmarks, setBookmarks] = useChromeStorage<BookmarkedItem[]>(
     "islamic-extension-bookmarks",
+    []
+  );
+
+  const [favorites, setFavorites] = useChromeStorage<FavoriteItem[]>(
+    "islamic-extension-favorites",
     []
   );
 
@@ -50,6 +55,35 @@ const ExtensionPopup = () => {
     setBookmarks(bookmarks.filter((bookmark) => bookmark.id !== id));
   };
 
+  const toggleFavorites = (item: FavoriteItem) => {
+    const exists = favorites.find(
+      (b) => b.id === item.id && b.lang === currentLanguage
+    );
+    setFavorites(
+      exists
+        ? favorites.filter(
+            (b) => b.id !== item.id && b.lang === currentLanguage
+          )
+        : [
+            ...favorites,
+            {
+              ...item,
+              lang: currentLanguage as language,
+              dateFavorite: new Date().toISOString(),
+            },
+          ]
+    );
+  };
+
+  const removeFavorite = (id: string) => {
+    setFavorites(favorites.filter((fav) => fav.id !== id));
+  };
+
+  const isFavorite = (id: string) =>
+    favorites.some(
+      (favorite) => favorite.id === id && favorite.lang === currentLanguage
+    );
+
   return (
     <div className="h-full flex flex-col bg-white w-lg">
       <Header />
@@ -59,12 +93,16 @@ const ExtensionPopup = () => {
           <DuaaTab
             onToggleBookmark={toggleBookmark}
             isBookmarked={isBookmarked}
+            onToggleFavorites={toggleFavorites}
+            isFavorite={isFavorite}
           />
         )}
         {activeTab === "verses" && (
           <VerseTab
             onToggleBookmark={toggleBookmark}
             isBookmarked={isBookmarked}
+            onToggleFavorites={toggleFavorites}
+            isFavorite={isFavorite}
           />
         )}
         {activeTab === "bookmarks" && (
@@ -75,7 +113,14 @@ const ExtensionPopup = () => {
             onRemoveBookmark={onRemoveBookmark}
           />
         )}
-        {activeTab === "favorites" && <FavoritesTab />}
+        {activeTab === "favorites" && (
+          <FavoritesTab
+            favorites={favorites.filter(
+              (item) => item.lang === currentLanguage
+            )}
+            onRemoveFavorite={removeFavorite}
+          />
+        )}
       </div>
 
       <Footer />
