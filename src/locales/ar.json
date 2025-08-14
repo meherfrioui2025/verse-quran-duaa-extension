@@ -56,6 +56,10 @@
       },
       "search":{
         "searchVersesPlaceholder": "ابحث في الآيات..."
+      },
+      "favorites":{
+        "favorites":"المفضلة",
+        "personal_duas":"الأدعية الشخصية"
       }
 
 }

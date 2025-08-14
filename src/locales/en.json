@@ -56,5 +56,9 @@
       },
       "search":{
         "searchVersesPlaceholder": "Search verses..."
+      },
+      "favorites":{
+        "favorites":"Favorites",
+        "personal_duas":"Personal Duas"
       }
 }

@@ -56,5 +56,9 @@
       },
       "search":{
         "searchVersesPlaceholder": "Rechercher des versets..."
+      },
+      "favorites":{
+        "favorites":"Favoris",
+        "personal_duas":"Douas personnelles"
       }
 }

@@ -9,6 +9,7 @@ import Footer from "../footer/footer";
 import VerseTab from "../verse-tab";
 import DuaaTab from "../duaa-tab";
 import Header from "../header";
+import FavoritesTab from "../favorites-tab";
 
 const ExtensionPopup = () => {
   const [activeTab, setActiveTab] = useState<TabType>("duas");
@@ -74,7 +75,9 @@ const ExtensionPopup = () => {
             onRemoveBookmark={onRemoveBookmark}
           />
         )}
+        {activeTab === "favorites" && <FavoritesTab />}
       </div>
+
       <Footer />
     </div>
   );
