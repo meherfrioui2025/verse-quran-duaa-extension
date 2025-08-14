@@ -1,19 +1,26 @@
 import { useState, useEffect, useMemo, FC } from "react";
 
 import { useExtensionTranslation } from "../../hooks/useExtensionTranslation";
-import { BookmarkedItem, Chapter, SelectOption, Verse } from "../../types";
+import {
+  BookmarkedItem,
+  Chapter,
+  language,
+  SelectOption,
+  Verse,
+} from "../../types";
 import chapters from "../../data/chapters/chapters.json";
 import { searchVerses } from "../../utils/search-verse";
 import VerseCard from "./verse-card/verse-card";
 import Pagination from "../ui/pagination";
 import Select from "../ui/select";
+import { getDailyVerse } from "../../utils/getDailyVerses";
 
 interface VerseTab {
-   onToggleBookmark: (item: BookmarkedItem) => void;
-    isBookmarked: (id: string) => boolean;
+  onToggleBookmark: (item: BookmarkedItem) => void;
+  isBookmarked: (id: string) => boolean;
 }
 
-const VerseTab:FC<VerseTab> = ({isBookmarked,onToggleBookmark}) => {
+const VerseTab: FC<VerseTab> = ({ isBookmarked, onToggleBookmark }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(5);
   const [data, setData] = useState<Verse[]>([]);
@@ -68,6 +75,7 @@ const VerseTab:FC<VerseTab> = ({isBookmarked,onToggleBookmark}) => {
     { label: "50", value: 50 },
   ];
 
+  const dailyVerse = getDailyVerse(data);
   if (loading) {
     return <div className="p-4">{t("loading")}</div>;
   }
@@ -85,9 +93,59 @@ const VerseTab:FC<VerseTab> = ({isBookmarked,onToggleBookmark}) => {
         <span className="mdi mdi-search-web absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 text-lg" />
       </div>
 
+      {!searchQuery && currentPage === 1 && (
+        <div className="gradient-islamic text-white rounded-xl p-6 mb-6 shadow-lg relative overflow-hidden">
+          <div className="absolute inset-0 bg-black/10"></div>
+          <div className="relative">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="font-semibold text-lg">{t("card.vers_of_day")}</h3>
+              <div className="flex items-center space-x-2">
+                <button
+                  className={`h-8 w-8 flex items-center justify-center cursor-pointer rounded-full transition-all duration-300 ${
+                    isBookmarked(String(dailyVerse.verse))
+                      ? "bg-[var(--islamic-gold)] text-white"
+                      : "bg-white/20 hover:bg-white/30 text-white hover:text-[var(--islamic-gold)]"
+                  }`}
+                  onClick={() =>
+                    onToggleBookmark({
+                      id: String(dailyVerse.verse),
+                      title: dailyVerse.title,
+                      text: dailyVerse.text,
+                      type: "verse",
+                      dateBookmarked: new Date().toISOString(),
+                      lang: currentLanguage as language,
+                    })
+                  }
+                >
+                  <span
+                    className={`mdi mdi-heart text-lg ${
+                      isBookmarked(String(dailyVerse.verse))
+                        ? "fill-current"
+                        : ""
+                    }`}
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div
+              className={`font-arabic mb-4 text-white bg-white/10 p-4 rounded-lg backdrop-blur-sm`}
+              style={{ lineHeight: 1.8 }}
+            >
+              {dailyVerse.text}
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="space-y-3">
         {paginatedData.map((verse) => (
-          <VerseCard key={`${verse.chapter}-${verse.verse}`} verse={verse} onToggleBookmark={onToggleBookmark} isBookmarked={isBookmarked} />
+          <VerseCard
+            key={`${verse.chapter}-${verse.verse}`}
+            verse={verse}
+            onToggleBookmark={onToggleBookmark}
+            isBookmarked={isBookmarked}
+          />
         ))}
       </div>
       <div className="flex justify-between items-center">

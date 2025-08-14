@@ -51,7 +51,8 @@
         "yesterday": "Hier",
         "days_ago": "il y a {{count}} jours",
         "bookmarked":"Favori",
-         "verse": "Verset"
+         "verse": "Verset",
+         "vers_of_day":"Verset du jour"
       },
       "search":{
         "searchVersesPlaceholder": "Rechercher des versets..."

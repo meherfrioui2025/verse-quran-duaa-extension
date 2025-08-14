@@ -51,7 +51,8 @@
         "yesterday": "Yesterday",
         "days_ago": "{{count}} days ago",
         "bookmarked":"Bookmarked",
-        "verse": "Verse"
+        "verse": "Verse",
+        "vers_of_day":"Verse of the Day"
       },
       "search":{
         "searchVersesPlaceholder": "Search verses..."

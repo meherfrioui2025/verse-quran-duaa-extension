@@ -21,6 +21,8 @@ const BookmarksTab: FC<BookmarksTabProps> = ({
     (bookmark) => filter === "all" || bookmark.type === filter
   );
 
+  console.log('bookmarksbookmarks',bookmarks)
+
   return (
     <div className="p-4 h-full custom-scroll overflow-y-auto fade-in">
       <div className="mb-2">

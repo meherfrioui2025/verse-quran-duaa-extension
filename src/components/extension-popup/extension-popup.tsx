@@ -41,7 +41,9 @@ const ExtensionPopup = () => {
   };
 
   const isBookmarked = (id: string) =>
-    bookmarks.some((bookmark) => bookmark.id === id);
+    bookmarks.some(
+      (bookmark) => bookmark.id === id && bookmark.lang === currentLanguage
+    );
 
   const onRemoveBookmark = (id: string) => {
     setBookmarks(bookmarks.filter((bookmark) => bookmark.id !== id));
