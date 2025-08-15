@@ -1,64 +1,126 @@
 {
-    "welcome_message": "Bonjour, bienvenue dans QuranVerse Reminder !",
-    "appName": "Compagnon Islamique",
-    "daily_guidance_prayers": "Guidance quotidienne et prières",
-    "language": {
-        "en": "Anglais",
-        "fr": "Français",
-        "ar": "Arabe"
+  "welcome_message": "Bonjour, bienvenue dans QuranVerse Reminder !",
+  "appName": "Compagnon Islamique",
+  "daily_guidance_prayers": "Guidance quotidienne et prières",
+  "language": {
+    "en": "Anglais",
+    "fr": "Français",
+    "ar": "Arabe"
+  },
+  "tabs": {
+    "duas": "Douas",
+    "verses": "Versets",
+    "prayer": "Prière",
+    "favorites": "Favoris",
+    "bookmarks": "Enregistrés",
+    "settings": "Paramètres"
+  },
+  "category": {
+    "morning": "Matin",
+    "evening": "Soir",
+    "prayer": "Prière",
+    "protection": "Protection",
+    "healing": "Guérison",
+    "forgiveness": "Pardon",
+    "gratitude": "Gratitude",
+    "sleeping": "Sommeil"
+  },
+  "footer": {
+    "about": "À propos",
+    "privacy": "Politique de confidentialité"
+  },
+  "pagination": {
+    "prev": "Précédent",
+    "next": "Suivant",
+    "page": "Page",
+    "of": "sur",
+    "itemsPerPage": "Articles par page"
+  },
+  "loading": "Chargement...",
+  "filters": {
+    "all": "Tout",
+    "dua": "Invocations",
+    "verse": "Versets"
+  },
+  "card": {
+    "dua": "Invocation",
+    "noBookmarks": "Aucun signet pour l'instant",
+    "saveFavorites": "Enregistrez vos duas et versets préférés",
+    "invalid_date": "Date invalide",
+    "today": "Aujourd'hui",
+    "yesterday": "Hier",
+    "days_ago": "il y a {{count}} jours",
+    "bookmarked": "Favori",
+    "verse": "Verset",
+    "vers_of_day": "Verset du jour"
+  },
+  "search": {
+    "searchVersesPlaceholder": "Rechercher des versets..."
+  },
+  "favorites": {
+    "favorites": "Favoris",
+    "personal_duas": "Douas personnelles"
+  },
+  "settings": {
+    "settings": "Paramètres",
+    "customizeExperience": "Personnalisez votre expérience avec votre compagnon islamique",
+    "general": "Général",
+    "notifications": "Notifications",
+    "prayers": "Heures de prière",
+    "notificationSettings": "Paramètres de notification",
+    "enableNotifications": "Activer les notifications",
+    "receiveDailyReminders": "Recevez des rappels et des versets quotidiens",
+    "startTime": "Heure de début",
+    "endTime": "Heure de fin",
+    "notificationDuration": "Durée de la notification",
+    "reminderFrequency": "Fréquence d'affichage des rappels (seconde/minute)",
+    "timeOptions": {
+      "5": "5 secondes",
+      "10": "10 secondes",
+      "20": "20 secondes",
+      "50": "50 secondes",
+      "60": "1 minute",
+      "300": "5 minutes",
+      "600": "10 minutes",
+      "1800": "30 minutes"
     },
-    "tabs": {
-        "duas": "Douas",
-        "verses": "Versets",
-        "prayer": "Prière",
-        "favorites": "Favoris",
-        "bookmarks": "Enregistrés",
-        "settings": "Paramètres"
+    "notificationInterval": "Intervalle de notification",
+    "reminderFrequencyInterval": "Fréquence d'affichage des rappels (secondes)",
+    "timeOptionsInterval": {
+      "5": "5 secondes",
+      "10": "10 secondes",
+      "30": "30 secondes",
+      "60": "1 minute",
+      "300": "5 minutes",
+      "600": "10 minutes",
+      "1800": "30 minutes"
     },
-    "category": {
-        "morning": "Matin",
-        "evening": "Soir",
-        "prayer": "Prière",
-        "protection": "Protection",
-        "healing": "Guérison",
-        "forgiveness": "Pardon",
-        "gratitude": "Gratitude",
-        "sleeping": "Sommeil"
+    "contentType": "Type de contenu",
+    "contentTypeDescription": "Quel type de contenu afficher",
+    "contentOptions": {
+      "both": "Duas & Versets",
+      "duas": "Duas uniquement",
+      "quran": "Versets uniquement"
     },
-    "footer": {
-        "about": "À propos",
-        "privacy": "Politique de confidentialité"
+    "prayerTimeSettings": "Paramètres des heures de prière",
+    "calculationMethod": "Méthode de calcul",
+    "calculationMethodDescription": "Méthode pour calculer les heures de prière",
+    "calculationMethods": {
+      "MWL": "Ligue mondiale musulmane",
+      "ISNA": "Société islamique d'Amérique du Nord",
+      "Egypt": "Autorité générale égyptienne",
+      "Makkah": "Oum Al-Qura (La Mecque)",
+      "Karachi": "Université des sciences islamiques, Karachi"
     },
-    "pagination": {
-        "prev": "Précédent",
-        "next": "Suivant",
-        "page": "Page",
-        "of": "sur",
-        "itemsPerPage": "Articles par page"
-    },
-    "loading": "Chargement...",
-    "filters": {
-        "all": "Tout",
-        "dua": "Invocations",
-        "verse": "Versets"
-      },
-      "card":{
-        "dua": "Invocation",
-        "noBookmarks": "Aucun signet pour l'instant",
-        "saveFavorites": "Enregistrez vos duas et versets préférés",
-        "invalid_date": "Date invalide",
-        "today": "Aujourd'hui",
-        "yesterday": "Hier",
-        "days_ago": "il y a {{count}} jours",
-        "bookmarked":"Favori",
-         "verse": "Verset",
-         "vers_of_day":"Verset du jour"
-      },
-      "search":{
-        "searchVersesPlaceholder": "Rechercher des versets..."
-      },
-      "favorites":{
-        "favorites":"Favoris",
-        "personal_duas":"Douas personnelles"
-      }
+    "prayerAlerts": "Alertes de prière",
+    "notifyBeforePrayer": "Recevoir une notification avant les heures de prière",
+    "alertTime": "Heure d'alerte",
+    "minutesBeforePrayer": "Minutes avant l'heure de la prière",
+    "alertOptions": {
+    "5": "5 minutes",
+    "10": "10 minutes",
+    "15": "15 minutes",
+    "20": "20 minutes"
+  }
+  }
 }

@@ -60,3 +60,56 @@ export interface FavoriteItem {
   dateFavorite?: string;
   lang: language;
 }
+
+export interface Settings {
+  notifications: boolean;
+  notificationSettings: NotificationSettings;
+  prayerSettings: PrayerSettings;
+}
+
+export interface NotificationSettings {
+  enabled: boolean;
+  startTime: string;
+  endTime: string;
+  interval: number;
+  displayDuration: number;
+  pauseDuringWork: boolean;
+  workStartTime: string;
+  workEndTime: string;
+  pauseDuringPrayer: boolean;
+  contentType: "both" | "quran" | "duas";
+  dailyVerse: boolean;
+  prayerReminders: boolean;
+  tenSecondReminders: boolean;
+}
+
+export interface PrayerTimes {
+  fajr: string;
+  dhuhr: string;
+  asr: string;
+  maghrib: string;
+  isha: string;
+  date: string;
+}
+
+export interface PrayerSettings {
+  location: {
+    latitude: number;
+    longitude: number;
+    city: string;
+    country: string;
+  } | null;
+  calculationMethod: "MWL" | "ISNA" | "Egypt" | "Makkah" | "Karachi";
+  notifications: {
+    fajr: boolean;
+    dhuhr: boolean;
+    asr: boolean;
+    maghrib: boolean;
+    isha: boolean;
+  };
+  reminderMinutes: number;
+  adhanEnabled: boolean;
+  alerts: boolean;
+  alertMinutes: number;
+  audioAlert: boolean;
+}

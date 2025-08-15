@@ -1,64 +1,126 @@
 {
-    "welcome_message": "Hello, welcome to the QuranVerse Reminder!",
-    "appName": "Islamic Companion",
-    "daily_guidance_prayers": "Daily Guidance & Prayers",
-    "language": {
-        "en": "English",
-        "fr": "French",
-        "ar": "Arabic"
+  "welcome_message": "Hello, welcome to the QuranVerse Reminder!",
+  "appName": "Islamic Companion",
+  "daily_guidance_prayers": "Daily Guidance & Prayers",
+  "language": {
+    "en": "English",
+    "fr": "French",
+    "ar": "Arabic"
+  },
+  "tabs": {
+    "duas": "Duas",
+    "verses": "Verses",
+    "prayer": "Prayer",
+    "favorites": "Favorites",
+    "bookmarks": "Saved",
+    "settings": "Settings"
+  },
+  "category": {
+    "morning": "Morning",
+    "evening": "Evening",
+    "prayer": "Prayer",
+    "protection": "Protection",
+    "healing": "Healing",
+    "forgiveness": "Forgiveness",
+    "gratitude": "Gratitude",
+    "sleeping": "Sleeping"
+  },
+  "footer": {
+    "about": "About",
+    "privacy": "Privacy Policy"
+  },
+  "pagination": {
+    "prev": "Prev",
+    "next": "Next",
+    "page": "Page",
+    "of": "of",
+    "itemsPerPage": "Items per page"
+  },
+  "loading": "Loading...",
+  "filters": {
+    "all": "All",
+    "dua": "Duas",
+    "verse": "Verses"
+  },
+  "card": {
+    "dua": "Dua",
+    "noBookmarks": "No bookmarks yet",
+    "saveFavorites": "Save your favorite duas and verses",
+    "invalid_date": "Invalid date",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "days_ago": "{{count}} days ago",
+    "bookmarked": "Bookmarked",
+    "verse": "Verse",
+    "vers_of_day": "Verse of the Day"
+  },
+  "search": {
+    "searchVersesPlaceholder": "Search verses..."
+  },
+  "favorites": {
+    "favorites": "Favorites",
+    "personal_duas": "Personal Duas"
+  },
+  "settings": {
+    "settings": "Settings",
+    "customizeExperience": "Customize your Islamic Companion experience",
+    "general": "General",
+    "notifications": "Notifications",
+    "prayers": "Prayer Times",
+    "notificationSettings": "Notification Settings",
+    "enableNotifications": "Enable Notifications",
+    "receiveDailyReminders": "Receive daily reminders and verses",
+    "startTime": "Start Time",
+    "endTime": "End Time",
+    "notificationDuration": "Notification duration",
+    "reminderFrequency": "How often to show reminders (second/Minute)",
+    "timeOptions": {
+      "5": "5 seconds",
+      "10": "10 seconds",
+      "20": "20 seconds",
+      "50": "50 seconds",
+      "60": "1 minute",
+      "300": "5 minutes",
+      "600": "10 minutes",
+      "1800": "30 minutes"
     },
-    "tabs": {
-        "duas": "Duas",
-        "verses": "Verses",
-        "prayer": "Prayer",
-        "favorites": "Favorites",
-        "bookmarks": "Saved",
-        "settings": "Settings"
+    "notificationInterval": "Notification Interval",
+    "reminderFrequencyInterval": "How often to show reminders (seconds)",
+    "timeOptionsInterval": {
+      "5": "5 seconds",
+      "10": "10 seconds",
+      "30": "30 seconds",
+      "60": "1 minute",
+      "300": "5 minutes",
+      "600": "10 minutes",
+      "1800": "30 minutes"
     },
-    "category": {
-        "morning": "Morning",
-        "evening": "Evening",
-        "prayer": "Prayer",
-        "protection": "Protection",
-        "healing": "Healing",
-        "forgiveness": "Forgiveness",
-        "gratitude": "Gratitude",
-        "sleeping": "Sleeping"
+    "contentType": "Content Type",
+    "contentTypeDescription": "What type of content to show",
+    "contentOptions": {
+      "both": "Duas & Verses",
+      "duas": "Duas Only",
+      "quran": "Verses Only"
     },
-    "footer": {
-        "about": "About",
-        "privacy": "Privacy Policy"
+    "prayerTimeSettings": "Prayer Time Settings",
+    "calculationMethod": "Calculation Method",
+    "calculationMethodDescription": "Method for calculating prayer times",
+    "calculationMethods": {
+      "MWL": "Muslim World League",
+      "ISNA": "Islamic Society of North America",
+      "Egypt": "Egyptian General Authority",
+      "Makkah": "Umm Al-Qura (Makkah)",
+      "Karachi": "University of Islamic Sciences, Karachi"
     },
-    "pagination": {
-        "prev": "Prev",
-        "next": "Next",
-        "page": "Page",
-        "of": "of",
-        "itemsPerPage": "Items per page"
-    },
-     "loading": "Loading...",
-     "filters": {
-        "all": "All",
-        "dua": "Duas",
-        "verse": "Verses"
-      },
-      "card":{
-        "dua": "Dua",
-        "noBookmarks": "No bookmarks yet",
-        "saveFavorites": "Save your favorite duas and verses",
-        "invalid_date": "Invalid date",
-        "today": "Today",
-        "yesterday": "Yesterday",
-        "days_ago": "{{count}} days ago",
-        "bookmarked":"Bookmarked",
-        "verse": "Verse",
-        "vers_of_day":"Verse of the Day"
-      },
-      "search":{
-        "searchVersesPlaceholder": "Search verses..."
-      },
-      "favorites":{
-        "favorites":"Favorites",
-        "personal_duas":"Personal Duas"
-      }
+    "prayerAlerts": "Prayer Alerts",
+    "notifyBeforePrayer": "Get notified before prayer times",
+    "alertTime": "Alert Time",
+    "minutesBeforePrayer": "Minutes before prayer time",
+    "alertOptions": {
+      "5": "5 minutes",
+      "10": "10 minutes",
+      "15": "15 minutes",
+      "20": "20 minutes"
+    }
+  }
 }

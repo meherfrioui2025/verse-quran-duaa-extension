@@ -1,65 +1,126 @@
 {
-    "welcome_message": "مرحباً، أهلاً بك في تطبيق تذكير آية القرآن!",
-    "appName": "الرفيق الإسلامي",
-    "daily_guidance_prayers": "الهداية اليومية والأدعية",
-    "language": {
-        "en": "الإنجليزية",
-        "fr": "الفرنسية",
-        "ar": "العربية"
+  "welcome_message": "مرحباً، أهلاً بك في تطبيق تذكير آية القرآن!",
+  "appName": "الرفيق الإسلامي",
+  "daily_guidance_prayers": "الهداية اليومية والأدعية",
+  "language": {
+    "en": "الإنجليزية",
+    "fr": "الفرنسية",
+    "ar": "العربية"
+  },
+  "tabs": {
+    "duas": "الأدعية",
+    "verses": "الآيات",
+    "prayer": "الصلاة",
+    "favorites": "المفضلة",
+    "bookmarks": "المحفوظات",
+    "settings": "الإعدادات"
+  },
+  "category": {
+    "morning": "الصباح",
+    "evening": "المساء",
+    "prayer": "الصلاة",
+    "protection": "الحماية",
+    "healing": "الشفاء",
+    "forgiveness": "المغفرة",
+    "gratitude": "الامتنان",
+    "sleeping": "النوم"
+  },
+  "footer": {
+    "about": "حول",
+    "privacy": "سياسة الخصوصية"
+  },
+  "pagination": {
+    "prev": "السابق",
+    "next": "التالي",
+    "page": "الصفحة",
+    "of": "من",
+    "itemsPerPage": "عدد العناصر لكل صفحة"
+  },
+  "loading": "جاري التحميل...",
+  "filters": {
+    "all": "الكل",
+    "dua": "الأدعية",
+    "verse": "الآيات"
+  },
+  "card": {
+    "dua": "دعاء",
+    "noBookmarks": "لا توجد علامات محفوظة بعد",
+    "saveFavorites": "احفظ أدعيتك وآياتك المفضلة",
+    "invalid_date": "تاريخ غير صالح",
+    "today": "اليوم",
+    "yesterday": "أمس",
+    "days_ago": "منذ {{count}} أيام",
+    "bookmarked": "مُفضّل",
+    "verse": "آية",
+    "vers_of_day": "آية اليوم"
+  },
+  "search": {
+    "searchVersesPlaceholder": "ابحث في الآيات..."
+  },
+  "favorites": {
+    "favorites": "المفضلة",
+    "personal_duas": "الأدعية الشخصية"
+  },
+  "settings": {
+    "settings": "الإعدادات",
+    "customizeExperience": "خصص تجربتك مع رفيقك الإسلامي",
+    "general": "عام",
+    "notifications": "الإشعارات",
+    "prayers": "أوقات الصلاة",
+    "notificationSettings": "إعدادات الإشعارات",
+    "enableNotifications": "تفعيل الإشعارات",
+    "receiveDailyReminders": "استلم تذكيرات وآيات يومية",
+    "startTime": "وقت البدء",
+    "endTime": "وقت الانتهاء",
+    "notificationDuration": "مدة الإشعار",
+    "reminderFrequency": "كم مرة يتم عرض التذكيرات (ثانية/دقيقة)",
+    "timeOptions": {
+      "5": "٥ ثوانٍ",
+      "10": "١٠ ثوانٍ",
+      "20": "٢٠ ثانية",
+      "50": "٥٠ ثانية",
+      "60": "دقيقة واحدة",
+      "300": "٥ دقائق",
+      "600": "١٠ دقائق",
+      "1800": "٣٠ دقيقة"
     },
-    "tabs": {
-        "duas": "الأدعية",
-        "verses": "الآيات",
-        "prayer": "الصلاة",
-        "favorites": "المفضلة",
-        "bookmarks": "المحفوظات",
-        "settings": "الإعدادات"
+    "notificationInterval": "فاصل الإشعارات",
+    "reminderFrequencyInterval": "عدد مرات عرض التذكيرات (بالثواني)",
+    "timeOptionsInterval": {
+      "5": "٥ ثوانٍ",
+      "10": "١٠ ثوانٍ",
+      "30": "٣٠ ثانية",
+      "60": "دقيقة واحدة",
+      "300": "٥ دقائق",
+      "600": "١٠ دقائق",
+      "1800": "٣٠ دقيقة"
     },
-    "category": {
-        "morning": "الصباح",
-        "evening": "المساء",
-        "prayer": "الصلاة",
-        "protection": "الحماية",
-        "healing": "الشفاء",
-        "forgiveness": "المغفرة",
-        "gratitude": "الامتنان",
-        "sleeping": "النوم"
+    "contentType": "نوع المحتوى",
+    "contentTypeDescription": "ما نوع المحتوى الذي سيتم عرضه",
+    "contentOptions": {
+      "both": "الأدعية والآيات",
+      "duas": "الأدعية فقط",
+      "quran": "الآيات فقط"
     },
-    "footer": {
-        "about": "حول",
-        "privacy": "سياسة الخصوصية"
+    "prayerTimeSettings": "إعدادات أوقات الصلاة",
+    "calculationMethod": "طريقة الحساب",
+    "calculationMethodDescription": "طريقة حساب أوقات الصلاة",
+    "calculationMethods": {
+      "MWL": "رابطة العالم الإسلامي",
+      "ISNA": "الجمعية الإسلامية لأمريكا الشمالية",
+      "Egypt": "الهيئة العامة المصرية",
+      "Makkah": "أم القرى (مكة)",
+      "Karachi": "جامعة العلوم الإسلامية، كراتشي"
     },
-    "pagination": {
-        "prev": "السابق",
-        "next": "التالي",
-        "page": "الصفحة",
-        "of": "من",
-        "itemsPerPage": "عدد العناصر لكل صفحة"
-    },
-    "loading": "جاري التحميل...",
-    "filters": {
-        "all": "الكل",
-        "dua": "الأدعية",
-        "verse": "الآيات"
-      },
-      "card":{
-        "dua": "دعاء",
-        "noBookmarks": "لا توجد علامات محفوظة بعد",
-        "saveFavorites": "احفظ أدعيتك وآياتك المفضلة",
-        "invalid_date": "تاريخ غير صالح",
-        "today": "اليوم",
-        "yesterday": "أمس",
-        "days_ago": "منذ {{count}} أيام",
-        "bookmarked":"مُفضّل",
-        "verse": "آية",
-        "vers_of_day":"آية اليوم"
-      },
-      "search":{
-        "searchVersesPlaceholder": "ابحث في الآيات..."
-      },
-      "favorites":{
-        "favorites":"المفضلة",
-        "personal_duas":"الأدعية الشخصية"
-      }
-
+    "prayerAlerts": "تنبيهات الصلاة",
+     "alertTime": "وقت التنبيه",
+    "notifyBeforePrayer": "تلقي إشعار قبل أوقات الصلاة",
+    "minutesBeforePrayer": "الدقائق قبل وقت الصلاة",
+    "alertOptions": {
+      "5": "٥ دقائق",
+      "10": "١٠ دقائق",
+      "15": "١٥ دقائق",
+      "20": "٢٠ دقائق"
+    }
+  }
 }
